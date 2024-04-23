@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  background-color: #3498db; /* Light background color */
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Light background color */
+}
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+footer p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Top Section Styles */
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+section {
+  flex: 1 1 45%; /* Adjust as needed for section width */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff; /* White background for sections */
+}
+
+section h2 {
+  display: none;  /* Hide section titles */
+}
+
+section i {
+  margin: 0 auto;  /* Center icons within sections */
+  font-size: 30px;
+  color: #3f51b5;
+}
+
+.schedule .schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#search-box {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#search-btn {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee; /* Light button background */
+}
+
+/* Features Grid Styles */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+article {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff; /* White background for features */
+}
+
+article a {
+  text-decoration: none;
+  color: #333;
+}
+
+article a:hover {
+  color: #007bff;
+}
+
+article button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee; /* Light button background */
+}
+
+/* My Calendar Styles */
+.my-calendar iframe {
+  width: 100%;
+  border: 0;
+  height: 200px; /* Adjust height as needed */
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSUfy: Home</title>
+    <link rel="stylesheet" href="home_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>NSUfy: Home</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="chatroom.html">Messages</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="Login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="top-section">
+        <section class="notices">
+          <h2><i class="fas fa-bullhorn"></i> Notices from NSU</h2>
+          <ul id="notices-list">
+            <li>Important Update Regarding...</li>
+            <li>New Club Registration Open Now!</li>
+          </ul>
+        </section>
+        <section class="emails">
+          <h2><i class="fas fa-envelope"></i> Recent Emails</h2>
+          <ul id="emails-list">
+            <li>NSUfy Administration [Important Information]</li>
+            <li>Library: Overdue Book Notice</li>
+          </ul>
+        </section>
+        <section class="schedule">
+          <h2><i class="fas fa-calendar-alt"></i> Today's Schedule</h2>
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Course</th>
+                <th>Instructor</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8:00 AM - 9:30 AM</td>
+                <td>Intro to Programming</td>
+                <td>Prof. Khan</td>
+                <td>SEC 201</td>
+              </tr>
+              <tr>
+                <td>10:00 AM - 11:30 AM</td>
+                <td>Calculus I</td>
+                <td>Prof. Ahmed</td>
+                <td>LEC 102</td>
+              </tr>
+            </tbody>
+          </table>
+          <button id="fetch-schedule-btn" disabled>Fetch Schedule</button>
+        </section>
+      </div>
+
+      <section class="search-bar">
+        <input type="text" placeholder="Search NSUfy..." id="search-box" />
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+      </section>
+
+      <section class="my-calendar">
+        <h2><i class="fas fa-calendar-alt"></i> My Calendar</h2>
+        <iframe
+          id="calendar-iframe"
+          src="https://calendar.google.com/calendar/embed?..."
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+        <button onclick="addEventToCalendar()">Add Event</button>
+      </section>
+      <section class="features-grid">
+        <article>
+          <h2>Newsfeed</h2>
+          <i class="fas fa-newspaper"></i>
+          <a href="newsfeed.html">Newsfeed</a>
+        </article>
+        <article>
+          <h2>Top Faculty</h2>
+          <i class="fas fa-graduation-cap"></i>
+          <a href="TopFaculty.html">Top Faculty </a>
+        </article>
+        <article>
+          <h2>Buy & Sell</h2>
+          <i class="fas fa-exchange-alt"></i>
+          <a href="#">Post a Listing </a>
+        </article>
+        <article>
+          <h2>Blood Request</h2>
+          <i class="fas fa-droplet"></i>
+          <a href="#">Request Blood </a>
+        </article>
+        <article>
+          <h2>Chatroom (Coming Soon)</h2>
+          <i class="fas fa-comments"></i>
+          <a href="chatroom.html">Chatroom</a>
+        </article>
+        <article>
+          <h2>Poll</h2>
+          <i class="fas fa-calendar"></i>
+          <a href="poll.html">Poll </a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 NSUfy</p>
+    </footer>
+  </body>
+</html>

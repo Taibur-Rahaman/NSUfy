@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  #chat-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    height: 400px; /* Adjust height as needed */
+    overflow-y: scroll; /* Enable scrolling for chat messages */
+  }
+  
+  #chat-messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #chat-messages li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #chat-messages li.me { /* Styling for own messages */
+    background-color: #f5f5f5;
+    text-align: right;
+  }
+  
+  #chat-messages li span.sender {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  #chat-messages li p {
+    margin: 0;
+  }
+  
+  #chat-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  #chat-message-box {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #chat-form button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #eee;
+  }
+  
+  #user-list {  border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 200px; /* Adjust height as needed */
+    overflow-y: scroll;
+  }
+  
+  #user-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #user-list li {
+    margin-bottom: 5px;
+  }
+  
